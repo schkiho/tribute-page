@@ -5,13 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node": "^10.11.0",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.12.0"
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss -o css/ --recursive",
-    "deploy": "gh-pages"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
